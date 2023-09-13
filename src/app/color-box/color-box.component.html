@@ -1,0 +1,9 @@
+<p>color-box works!</p>
+<input type="text" [style.background]="clr" (input)="UpdateClr($event)" />
+
+<!-- <input type="text" [style.background]="clr" [(ngModel)]="clr" /> -->
+<!-- import ng model in app.module.ts -->
+<button>Add color</button>
+<app-box *ngFor="let colors of colorList" [clr]="colors"> </app-box>
+<!-- <app-box clr="pink"> </app-box>
+<app-box clr="pink"> </app-box> -->

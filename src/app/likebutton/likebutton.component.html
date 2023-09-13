@@ -1,0 +1,7 @@
+<div class="counter-container">
+  <button (click)="increment()">Like {{ no }}</button>
+  <button (click)="decrement()">Dislike {{ no1 }}</button>
+  <progress [max]="no + no1" [value]="no"></progress>
+
+  <h2 *ngIf="yourawseome">You are Awesome</h2>
+</div>
